@@ -1,0 +1,8 @@
+rht = right
+i = icon
+dwn = down
+pop-cate = popular category 
+head-1 = heading one
+cate-cont = category container
+pdt-cont = product container
+pdt-img = product image
