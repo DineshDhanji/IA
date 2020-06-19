@@ -1,20 +1,22 @@
-function navShow()
+// It shows navigation bar.
+function navShow(a)
 {
-    var a = document.getElementsByClassName("nav-toggle")[0].childNodes[1].innerHTML
+    var z = document.getElementsByClassName("nav-toggle")[a].childNodes[1].innerHTML
 
-    if (a == `<i class="fas fa-bars"></i>`)
+    if (z == `<i class="fas fa-bars"></i>`)
     {
-        document.getElementsByClassName("nav-toggle")[0].childNodes[1].innerHTML = `<i class="fas fa-times"></i>`;
+        document.getElementsByClassName("nav-toggle")[a].childNodes[1].innerHTML = `<i class="fas fa-times"></i>`;
     }
     else
     {
-        document.getElementsByClassName("nav-toggle")[0].childNodes[1].innerHTML = `<i class="fas fa-bars"></i>`;
+        document.getElementsByClassName("nav-toggle")[a].childNodes[1].innerHTML = `<i class="fas fa-bars"></i>`;
     }
 
-    document.getElementsByClassName("nav-toggle")[0].classList.toggle("nav-toggle-btn");
+    document.getElementsByClassName("nav-toggle")[a].classList.toggle("nav-toggle-btn");
     document.getElementsByClassName("nav-cont")[0].classList.toggle("nav-cont-show");
 }
 
+// It hide navigation bar.
 function navBarHide()
 {
     var b = event.target.parentElement.parentElement.parentElement.parentElement.parentElement.classList[0]
@@ -36,8 +38,7 @@ function navBarHide()
     {
         event.target.classList.toggle("nav-hide-btn");
     }
-
-    
-
-
 }
+
+
+
