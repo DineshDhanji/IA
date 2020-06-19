@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Account</title>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- JAVASCRIPT -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script async src="../JAVASCRIPT/01.js"></script>
+       <!-- GOOGLE FONTS -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+		<!-- CSS -->
+		<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="../CSS/Homepage.css">
+		<link rel="stylesheet" href="../CSS/Sign-In.css">
+	</head>
+<body >
+<!-- NAV BARS -->
+<div class="nav-cont">
+    <div class="nav-search">
+        <div class="search-bar col-12">
+            <div style="position: relative;">
+                <form method="GET" action="#">
+                <input type="search" placeholder="Search your product here."/>
+                <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            </div>
+    </div>
+    <div class="nav-bar">
+        <ul style="margin: 0px 10px">
+            <li>
+                <div class="nav-head">Categories<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
+            </li>
+            <ul>
+                <li>
+                    <div class="nav-cate-div">
+                      <a href="#" style="display: flex;align-items: center;"><div class="nav-cate-div-icon" style="background-color: #FF0059;"><i class="fas fa-venus" style="transition: .3s ;font-size: 14px;"></i></div>Women's Clothing</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Branded Pret</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">WESTERN WEAR</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Jeans</li></a>
+                                            <li><a href="#">Pants</li></a>
+                                            <li><a href="#">Legging</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Women's Accessories</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Unstitched Clothes</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #0077C6;"><i class="fas fa-mars" style="transition: .3s; font-size: 14px"></i></div>Men's Clothing</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Shirts</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">T-Shirts</li></a>
+                                            <li><a href="#">Casual Shirts</li></a>
+                                            <li><a href="#">Formal Shirts</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Unstitched Clothes</li></a>
+                                            <li><a href="#">Shawls</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #6E1BE4;"><i class="fas fa-baby"style="transition: .3s; font-size: 14px;"></i></div>Kid's Clothing</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Shirts</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">T-Shirts</li></a>
+                                            <li><a href="#">Casual Shirts</li></a>
+                                            <li><a href="#">Formal Shirts</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Unstitched Clothes</li></a>
+                                            <li><a href="#">Shawls</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                      <a href="./Mobile & Tablets.html" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #FFC30B;"><i class="fas fa-mobile-alt" style="transition: .3s; font-size: 14px;"></i></div>Mobile & Tablets</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Shirts</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">T-Shirts</li></a>
+                                            <li><a href="#">Casual Shirts</li></a>
+                                            <li><a href="#">Formal Shirts</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Unstitched Clothes</li></a>
+                                            <li><a href="#">Shawls</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #18A05E;"><i class="fas fa-tv" style="transition: .3s; font-size: 14px"></i></div>Computers & Gaming</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Shirts</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">T-Shirts</li></a>
+                                            <li><a href="#">Casual Shirts</li></a>
+                                            <li><a href="#">Formal Shirts</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Unstitched Clothes</li></a>
+                                            <li><a href="#">Shawls</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #F57224;"><i class="fas fa-blender-phone" style="transition: .3s; font-size: 14px"></i></div>Appliances</a>
+                    </div>
+                    <div class="nav-cate-sub">
+                        <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
+                                RELATIVE IMAGE (Poster)
+                        </div>
+                        <div class="nav-cate-sub-list">
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Shirts</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">T-Shirts</li></a>
+                                            <li><a href="#">Casual Shirts</li></a>
+                                            <li><a href="#">Formal Shirts</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">Kurtas & Shalwar Kameez</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">Kurties</li></a>
+                                            <li><a href="#">Shalwar Kameez</li></a>
+                                            <li><a href="#">Unstitched Clothes</li></a>
+                                            <li><a href="#">Shawls</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div style="width: 200px;padding: 0px 8px;margin: 5px 10px;">
+                                    <ul>
+                                        <li style="border-bottom: 3px solid orange; font-size: 15px; font-weight: 500;"><a href="#">SOMETHING</li></a>
+                                        <ul style="font-size: 14px;">
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                            <li><a href="#">something</li></a>
+                                        </ul>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="nav-bar">
+        <ul style="margin: 0px 10px">
+            <li>
+                <div class="nav-head">Customer Care<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
+            </li>
+            <ul>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#"><i class="far fa-id-badge" style="color: black; font-size: 20px; margin: 0px 10px;"></i>Contact Us</a>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#"><i class="fas fa-users" style="color: black; font-size: 20px;margin: 0px 10px;"></i>About Us</a>
+                    </div>
+                   
+                </li>
+                <li>
+                    <div class="nav-cate-div">
+                        <a href="#"><i class="fas fa-times"style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Something</a>
+                    </div>
+                    
+                </li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<!-- NAV BARS END-->
+<!-- HEADER -->
+<header>
+    <div class="header-a">
+        <div class="nav-toggle">
+            <button onclick="navShow(0)"><i class="fas fa-bars"></i></button>
+        </div>
+        <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+            <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                <div class="logo">    
+                </div>
+            </div>
+        </a>
+        <div class="header-rht col-8">
+        <div class="search-bar">
+            <div style="position: relative;">
+                <form method="GET" action="#">
+                    <input type="search" placeholder="Search your product here."/>
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <a href="#">
+                <div class="cart-i">
+                    <svg width="50" height="50">       
+                    <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                </svg>
+                <span>Cart</span>
+                </div>
+            </a>
+
+            <a href="./Sign-In.html">
+                <div class="account-i"><i class="fas fa-user-circle"></i><span>Sign In</span></div>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="header-b">
+        <div class="nav-toggle">
+            <button onclick="navShow(1)"><i class="fas fa-bars"></i></button>
+        </div>
+        <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+            <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                <div class="logo">    
+                </div>
+            </div>
+        </a>
+        <div style="display: flex;">
+            <a href="#">
+                <div class="cart-i">
+                    <svg width="50" height="50">       
+                    <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                </svg>
+                <span>Cart</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- HEADER ENDS HERE -->
+<!-- Sign in Form -->
+<!-- <div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Create Account</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your email for registration</span>
+				<input type="text" placeholder="Name" />
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button>Sign Up</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Sign in</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>Sign In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button class="ghost" id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+</div> -->
+<!-- ENDS -->
+<!-- FOOTER -->
+<footer>
+    <div class="footer-head col-12 col-lg-4">
+        <div class="col-12 ">
+            <div style="display: flex; justify-content: center; align-items: center; margin: 30px 0px ;">
+                <img src="../Logo/Logo.03.png" style="    width: 225px;
+                height: 97px;"/>
+            </div>
+  
+            <div style="width: 100%; display: flex; justify-content: center;align-items: center;">
+                <a href="https://www.facebook.com/">
+                    <div class="footer-head-sub" >
+                        <div class="footer-head-i"><i class="fab fa-facebook-square"></i></div>
+                        <span style="font-size: 15px;">Facebook</span>
+                    </div>
+                </a>
+  
+                <a href="https://www.instagram.com/">
+                 <div class="footer-head-sub" >
+                    <div class="footer-head-i"><i class="fab fa-instagram"></i></div>
+                    <span style="font-size: 15px;">Instagram</span>
+                 </div>
+                </a>
+  
+                 <a href="https://www.whatsapp.com/">
+                 <div class="footer-head-sub" >
+                    <div class="footer-head-i"><i class="fab fa-whatsapp"></i></div>
+                    <span style="font-size: 15px;">Whatsapp</span>
+                 </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom col-12 col-lg-8">
+        <div>
+            <ul>
+                <li>ABOUT US</li>
+                <ul>
+                    <li>Company Info</li>
+                    <li>Company Vision</li>
+                    <li>Global Impact</li>
+                    <li>Policies</li>
+                </ul>        
+            </ul>
+        </div>
+        
+        <div>
+            <ul>
+                <li>CONTACT US</li>
+                <ul>
+                    <li>iaonlineshopping@gmail.com</li>
+                    <li>Contact no. +92 XXXXXXXXXX</li>
+                </ul>        
+            </ul>
+        </div>
+  
+        <div>
+          <ul>
+              <li>CUSTOMER'S CARE</li>
+              <ul>
+                  <li>Ask any Question ?</li>
+                  <li>Feedback</li>
+              </ul>        
+          </ul>
+      </div>
+    </div>
+</footer>
+<!-- END -->
+    
+<script>
+    // Animation on Sign In page.
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+    	container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+    	container.classList.remove("right-panel-active");
+    });    
+</script>
+
+</body>
+</html>
