@@ -32,7 +32,7 @@
             </div>
             </div>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" style="height: 280px;">
         <ul style="margin: 0px 10px">
             <li>
                 <div class="nav-head">Categories<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
@@ -40,7 +40,7 @@
             <ul>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-venus" style="color: #FF0059; font-size: 20px; margin: 0px 10px;"></i>Women's Clothing</a>
+                      <a href="#" style="display: flex;align-items: center;"><div class="nav-cate-div-icon" style="background-color: #FF0059;"><i class="fas fa-venus" style="transition: .3s ;font-size: 14px;"></i></div>Women's Clothing</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -92,7 +92,7 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-mars" style="color: #0077C6; font-size: 20px;margin: 0px 10px;"></i>Men's Clothing</a>
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #0077C6;"><i class="fas fa-mars" style="transition: .3s; font-size: 14px"></i></div>Men's Clothing</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -145,7 +145,7 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-baby"style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Kid's Clothing</a>
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #6E1BE4;"><i class="fas fa-baby"style="transition: .3s; font-size: 14px;"></i></div>Kid's Clothing</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -198,7 +198,7 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="./Mobile & Tablets.html"><i class="fas fa-mobile-alt" style="font-size: 20px;margin: 0px 10px;"></i>Mobile & Tablets</a>
+                      <a href="./Mobile & Tablets.html" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #FFC30B;"><i class="fas fa-mobile-alt" style="transition: .3s; font-size: 14px;"></i></div>Mobile & Tablets</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -251,7 +251,7 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-tv" style="color: #18A05E; font-size: 20px;margin: 0px 5px;"></i>Computers & Gaming</a>
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #18A05E;"><i class="fas fa-tv" style="transition: .3s; font-size: 14px"></i></div>Computers & Gaming</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -304,7 +304,7 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-blender-phone" style="color: #F57224; font-size: 20px;margin: 0px 5px;"></i>Appliances</a>
+                        <a href="#" style="display: flex; align-items: center;"><div class="nav-cate-div-icon" style="background-color: #F57224;"><i class="fas fa-blender-phone" style="transition: .3s; font-size: 14px"></i></div>Appliances</a>
                     </div>
                     <div class="nav-cate-sub">
                         <div class="nav-cate-sub-img" style="display: flex;justify-content: center;align-items: center;">
@@ -358,7 +358,7 @@
             </ul>
         </ul>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" style="height: 160px;">
         <ul style="margin: 0px 10px">
             <li>
                 <div class="nav-head">Customer Care<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
@@ -378,55 +378,74 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-times"style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Something</a>
+                        <a href="#"><i class="far fa-comment-dots" style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Feedback</a>
                     </div>
-                    
                 </li>
             </ul>
         </ul>
     </div>
 </div>
-<div class="nav-toggle">
-    <button onclick="navShow()"><i class="fas fa-bars"></i></button>
-</div>
 <!-- NAV BARS END-->
 <!-- HEADER -->
 <header>
-    <div class="header-a">
-        <div class="logo col-4">
-            <div class="logo">
-                <img src="./l.png"/>
-            </div>
-        </div>
-        <div class="header-rht col-8">
-            <div class="search-bar col-8">
-            <div style="position: relative;">
-                <form method="GET" action="#">
-                <input type="search" placeholder="Search your product here."/>
-                <button><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-            </div>
-            <div style="display: flex;height: 60px;">
-                <div class="cart-i"><i class="fas fa-shopping-cart"></i><span>Cart</span></div>
-                <div class="account-i"><i class="fas fa-user-circle"></i><span>Sign In</span></div>
-            </div>
-        </div>
-    </div>
-    <div class="header-b">
-        <div class="offset-3 col-6" style="display: flex;justify-content: center;align-items: center;">
-            <img src="./l.png"/>
-        </div>
-        <div class="col-3" style="display: flex;">
-            <div class="cart-i">
-                <i class="fas fa-shopping-cart"></i><span>Cart</span>
-            </div>
-            <div class="account-i">
-                <i class="fas fa-user-circle"></i><span>Sign In</span>
-            </div>
-        </div>
-    </div>
+      <div class="header-a">
+          <div class="nav-toggle">
+              <button onclick="navShow(0)"><i class="fas fa-bars"></i></button>
+          </div>
+          <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+              <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                  <div class="logo">    
+                  </div>
+              </div>
+          </a>
+          <div class="header-rht col-8">
+          <div class="search-bar">
+              <div style="position: relative;">
+                  <form method="GET" action="#">
+                      <input type="search" placeholder="Search your product here."/>
+                      <button><i class="fas fa-search"></i></button>
+                  </form>
+              </div>
+          </div>
+          <div style="display: flex;">
+              <a href="#">
+                  <div class="cart-i">
+                      <svg width="50" height="50">       
+                      <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                  </svg>
+                  <span>Cart</span>
+                  </div>
+              </a>
+  
+              <a href="./Sign-In.html">
+                  <div class="account-i"><i class="fas fa-user-circle"></i><span>Sign In</span></div>
+              </a>
+          </div>
+          </div>
+      </div>
+      <div class="header-b">
+          <div class="nav-toggle">
+              <button onclick="navShow(1)"><i class="fas fa-bars"></i></button>
+          </div>
+          <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+              <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                  <div class="logo">    
+                  </div>
+              </div>
+          </a>
+          <div style="display: flex;">
+              <a href="#">
+                  <div class="cart-i">
+                      <svg width="50" height="50">       
+                      <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                  </svg>
+                  <span>Cart</span>
+                  </div>
+              </a>
+          </div>
+      </div>
 </header>
+<!-- HEADER ENDS HERE -->
 <!-- MAIN CONTAINS OF PAGE -->
 <div class="main-cont" >
     <div class="filter-cont">

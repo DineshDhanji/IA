@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../CSS/Homepage.css">
+    <link rel="stylesheet" href="../CSS/Product-page.css">
 </head>
 <body>
 <!-- NAV BARS -->
@@ -32,7 +33,7 @@
             </div>
             </div>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" style="height: 280px;">
         <ul style="margin: 0px 10px">
             <li>
                 <div class="nav-head">Categories<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
@@ -358,7 +359,7 @@
             </ul>
         </ul>
     </div>
-    <div class="nav-bar">
+    <div class="nav-bar" style="height: 160px;">
         <ul style="margin: 0px 10px">
             <li>
                 <div class="nav-head">Customer Care<span class="nav-hide-btn" onclick="navBarHide()"><i class="fas fa-caret-down"></i></span></div>
@@ -378,9 +379,8 @@
                 </li>
                 <li>
                     <div class="nav-cate-div">
-                        <a href="#"><i class="fas fa-times"style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Something</a>
+                        <a href="#"><i class="far fa-comment-dots" style="color: #6E1BE4; font-size: 20px;margin: 0px 10px;"></i>Feedback</a>
                     </div>
-                    
                 </li>
             </ul>
         </ul>
@@ -389,62 +389,62 @@
 <!-- NAV BARS END-->
 <!-- HEADER -->
 <header>
-    <div class="header-a">
-        <div class="nav-toggle">
-            <button onclick="navShow(0)"><i class="fas fa-bars"></i></button>
-        </div>
-        <a href="./Homepage.html" style="margin: 0 0 0 16px;">
-            <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
-                <div class="logo">    
-                </div>
-            </div>
-        </a>
-        <div class="header-rht col-8">
-        <div class="search-bar">
-            <div style="position: relative;">
-                <form method="GET" action="#">
-                    <input type="search" placeholder="Search your product here."/>
-                    <button><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        <div style="display: flex;">
-            <a href="#">
-                <div class="cart-i">
-                    <svg width="50" height="50">       
-                    <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
-                </svg>
-                <span>Cart</span>
-                </div>
-            </a>
-
-            <a href="./Sign-In.html">
-                <div class="account-i"><i class="fas fa-user-circle"></i><span>Sign In</span></div>
-            </a>
-        </div>
-        </div>
-    </div>
-    <div class="header-b">
-        <div class="nav-toggle">
-            <button onclick="navShow(1)"><i class="fas fa-bars"></i></button>
-        </div>
-        <a href="./Homepage.html" style="margin: 0 0 0 16px;">
-            <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
-                <div class="logo">    
-                </div>
-            </div>
-        </a>
-        <div style="display: flex;">
-            <a href="#">
-                <div class="cart-i">
-                    <svg width="50" height="50">       
-                    <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
-                </svg>
-                <span>Cart</span>
-                </div>
-            </a>
-        </div>
-    </div>
+      <div class="header-a">
+          <div class="nav-toggle">
+              <button onclick="navShow(0)"><i class="fas fa-bars"></i></button>
+          </div>
+          <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+              <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                  <div class="logo">    
+                  </div>
+              </div>
+          </a>
+          <div class="header-rht col-8">
+          <div class="search-bar">
+              <div style="position: relative;">
+                  <form method="GET" action="#">
+                      <input type="search" placeholder="Search your product here."/>
+                      <button><i class="fas fa-search"></i></button>
+                  </form>
+              </div>
+          </div>
+          <div style="display: flex;">
+              <a href="#">
+                  <div class="cart-i">
+                      <svg width="50" height="50">       
+                      <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                  </svg>
+                  <span>Cart</span>
+                  </div>
+              </a>
+  
+              <a href="./Sign-In.html">
+                  <div class="account-i"><i class="fas fa-user-circle"></i><span>Sign In</span></div>
+              </a>
+          </div>
+          </div>
+      </div>
+      <div class="header-b">
+          <div class="nav-toggle">
+              <button onclick="navShow(1)"><i class="fas fa-bars"></i></button>
+          </div>
+          <a href="./Homepage.html" style="margin: 0 0 0 16px;">
+              <div class="col-12" style="height: 130px;;display: flex;align-items: center;">
+                  <div class="logo">    
+                  </div>
+              </div>
+          </a>
+          <div style="display: flex;">
+              <a href="#">
+                  <div class="cart-i">
+                      <svg width="50" height="50">       
+                      <image href="../Logo/Cart Icon.svg" height="45" width="45"/>
+                  </svg>
+                  <span>Cart</span>
+                  </div>
+              </a>
+          </div>
+      </div>
 </header>
 <!-- HEADER ENDS HERE -->
 <!-- CAROUSEL STARTS HERE -->
@@ -550,7 +550,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -566,7 +567,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -583,7 +584,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -599,7 +601,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -616,7 +618,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -632,7 +635,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -649,7 +652,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -665,7 +669,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -682,7 +686,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -698,7 +703,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -715,7 +720,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -731,7 +737,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -748,7 +754,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -764,7 +771,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -781,7 +788,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -797,7 +805,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -814,7 +822,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -830,7 +839,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -847,7 +856,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -863,7 +873,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -880,7 +890,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -896,7 +907,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -913,7 +924,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -929,7 +941,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -946,7 +958,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -962,7 +975,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -979,7 +992,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -995,7 +1009,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -1012,7 +1026,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -1028,7 +1043,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -1045,7 +1060,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -1061,7 +1077,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -1078,7 +1094,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -1094,7 +1111,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -1111,7 +1128,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -1127,7 +1145,7 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
-            </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
@@ -1144,7 +1162,8 @@
                     <div>Add to Wishlist</div>
                 </div>
             </div>
-            <div class="pdt-img" style="background-image: url(../Products/q.png);background-repeat: no-repeat;background-position: center;">
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
             </div>
             <div class="pdt-detail">
               <div class="pdt-name">
@@ -1160,7 +1179,41 @@
               <div class="pdt-price">
                 <span>Rs. 19,499</span>
               </div>
+            </div></a>
+            <div class="pdt-btn">
+                <div class="add-to-cart">
+                    <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
+                </div>
             </div>
+        </div>
+        <div class="pdt-cont-1">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="pdt-fav">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="pdt-wishlist" onclick="alert(`This function is not available right now.`)">
+                    <i class="fas fa-plus"></i>
+                    <div>Add to Wishlist</div>
+                </div>
+            </div>
+            <a href="Product-Page-Demo.html">
+            <div class="pdt-img" style="background-image: url(../Products/q.webp); background-size: contain;background-repeat: no-repeat;background-position: center;">
+            </div>
+            <div class="pdt-detail">
+              <div class="pdt-name">
+                Redmi Note 8 - 4GB RAM - 64GB ROM
+              </div>
+              <div class="pdt-rating">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="pdt-price">
+                <span>Rs. 19,499</span>
+              </div>
+            </div></a>
             <div class="pdt-btn">
                 <div class="add-to-cart">
                     <button onclick="alert(`This Functionality is not available right now.`)">Add To Cart</button>
