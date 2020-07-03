@@ -111,7 +111,6 @@
 body
 {
     /* font-family: "Sofia"; */
-    /* font-family: 'Roboto Slab', serif; */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #EEF2F3;
 }
@@ -152,9 +151,8 @@ body
 .nav-bar 
 {
     border-bottom: 1px solid #339AF0;
-    height: auto;
     overflow: hidden;
-
+    transition: .5s;
 }
 .nav-toggle-btn button
 {
@@ -252,7 +250,7 @@ body
 }
 .nav-bar-hide
 {
-    height: 42px;
+    height: 42px !important;
 }
 ul
 {
