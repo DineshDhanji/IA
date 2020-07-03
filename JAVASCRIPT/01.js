@@ -40,5 +40,39 @@ function navBarHide()
     }
 }
 
+// Change Image
+function  changeImg()
+{
+    var image = event.target.src;
+    document.getElementsByClassName("pdt-main-img")[0].childNodes[1].childNodes[1].src = image; 
+    
+    var currentImg = document.getElementsByClassName("pdt-main-img")[0].childNodes[1].childNodes[1].src;
+    var allImg = document.getElementsByClassName("pdt-sub-img");
+    for (var i = 0; i < allImg.length; i++)
+    {
+        if (currentImg == allImg[i].children[0].src)
+        {
+           var a = allImg[i].children[0].parentNode.style.border = '2px solid #1A73E8';
+        }
+        else
+        {
+            var a = allImg[i].children[0].parentNode.style.border = '1px solid lightgrey';
+        }    
+    }
+}
+
+var currentImg = document.getElementsByClassName("pdt-main-img")[0].childNodes[1].childNodes[1].src;
+var allImg = document.getElementsByClassName("pdt-sub-img");
+for (var i = 0; i < allImg.length; i++)
+{
+    if (currentImg == allImg[i].children[0].src)
+    {
+        var a =allImg[i].children[0].parentNode.style.border = '2px solid #1A73E8';
+    }    
+    else
+    {
+        var a = allImg[i].children[0].parentNode.style.border = '1px solid lightgrey';
+    }    
+}
 
 
